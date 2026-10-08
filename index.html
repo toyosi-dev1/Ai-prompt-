@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Prompt Studio — Creative AI Prompt Workspace</title>
+    <meta name="description" content="AI Prompt Studio is a creative workspace for turning ideas into polished, production-ready AI prompts." />
+    <meta name="theme-color" content="#0d0c0b" />
+    <meta name="color-scheme" content="dark light" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AI Prompt Studio — Creative AI Prompt Workspace" />
+    <meta property="og:description" content="Turn rough ideas into production-ready AI prompts." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      try {
+        var saved = JSON.parse(localStorage.getItem('prompt-studio:preferences'))
+        if (saved && saved.theme === 'light') document.documentElement.dataset.theme = 'light'
+      } catch (error) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>AI Prompt Studio needs JavaScript to run.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
